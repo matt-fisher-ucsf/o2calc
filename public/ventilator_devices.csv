@@ -1,0 +1,102 @@
+Brand,Model,Flow,Note,Contacted?
+Air Liquide,Monnal T75,3,https://www.airliquidehealthcare.com.ar/sites/alh_ar/files/2018/08/17/monnal_t75_-_hoja_de_datos_tecnicos_ingles.pdf,
+Air Liquide,Monnal T60,,,yes
+Air Liquide,EOVE 150,1-20,https://www.westcaremedical.com/wp-content/uploads/2017/01/100-23-EO-150-user-manual-RevI-1.pdf,
+Air Liquide,Vendom,,,yes
+Biosys,Biyovent,,,
+BMC Medical,Y-30T,,,yes
+BMC Medical,G3 B30VT,,,yes
+Breas,Vivo 65,5,https://www.lifetechcare.com/uploads/userfiles/files/documents/products/Vivo%2065%20Operating%20Manual.pdf,
+Breas,Vivo 55,8,https://www.breas.com/wp-content/uploads/2020/04/u_vivo55_006625_eneu_y-1.pdf,
+Breas,Vivo 50/60,,,yes
+Breas,Vivo 45 LS,8,https://breas.com/wp-content/uploads/2020/04/U_Vivo45_LS_007300_Y-3_EnEU.pdf,
+Breas,Vivo 45 ,,,yes
+Breas,Vivo 30/40,,,yes
+Breas,Vivo 1-2-3,,,yes
+Breas,NIPPY 4+,,,yes
+Breas,NIPPY 4 ,,,yes
+Breas,NIPPY 3,,,yes
+CAE Healthcare,CAE Air1,,,yes
+Drager,Evita Infinity V500,2,,yes
+Drager,Savina 300 Select,2,,yes
+Drager,Savina 300 Classic,2,,yes
+eVent Medical,Inspiration 7i,,,yes
+eVent Medical,eVolution 3e,,,yes
+GE Healthcare,CARESCAPE R860,2-10,https://www.gehealthcare.com/-/jssmedia/f96ef53464d6430d93c22fcf643aec9f.pdf?la=en-us,
+GE Healthcare,Engstrom Carestation,2-10,https://regulatorydoctor.us/wp-content/uploads/2013/10/GE-Engstrom-Carestation.pdf,
+GE Healthcare,iVent,,,
+Getinge,Servo-u,2,https://www.getinge.com/siteassets/products-a-z/servo-u-mechanical-ventilator/servo-u-datasheet-6886378_en-nonus-rev012.pdf?disclaimerAccepted=yes,
+Getinge,Servo-air,2 +/- 5%,https://www.getinge.com/siteassets/products-a-z/servo-air-mechanical-ventilator/servo-air-2.1-datasheet-en-nonus-mx-7011-rev013.pdf?disclaimerAccepted=yes,
+Getinge,Servo-i,2,https://www.getinge.com/siteassets/products-a-z/servo-i-mechanical-ventilator/lab-6670105---11.00---servoi_data_6670105_r22_160411_en_nonus.pdf?disclaimerAccepted=yes,
+Getinge,Servo-s,2,https://www.getinge.com/siteassets/products-a-z/servo-s-mechanical-ventilator/lab-6670115---05.00---servos_data_6670115_r15_160318_en_nonus12.pdf?disclaimerAccepted=yes,
+Gradian Health Systems,Gradian CCV,0,,yes
+Hamilton Medical,HAMILTON-C3,6,,yes
+Hamilton Medical,HAMILTON-G5,,"2X’s the flow trigger setting.  In pressure trigger, its fixed at 1 LPM.  With Intellisync option its 4LPM.  If flow trigger setting is Less than 2LPM, then base flow =4L/min Pressure trigger: 1 l/min",yes
+Hamilton Medical,HAMILTON-C1,3,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7503115/,yes
+Hamilton Medical,HAMILTON-C6,6,,yes
+Hamilton Medical,HAMILTON-T1,3,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7503115/,yes
+Hamilton Medical,HAMILTON-MR1,3,,yes
+Hillrom,Life2000,40*,"The bias flow of the Life200 ventilator is up to 40 LPM coming out of the vent, based on volume and I-Time settings, but that is PRIOR to entrainment from the POV (proportional open ventilation) venturi ports.
+When you factor in the entrainment flow, based on volume and I-Time settings, the total delivered flow can be up to 120 LPM. ",yes
+Inovytec,Ventway Sparrow,,,yes
+Lowenstein Medical,LUISA,,,yes
+Lowenstein Medical,prisma30ST,,,yes
+Lowenstein Medical,prisma30ST-HFT,,,yes
+Lowenstein Medical,prisma VENT30-C,,,yes
+Lowenstein Medical,prisma VENT40,,,yes
+Lowenstein Medical,prisma VENT50,,,yes
+Lowenstein Medical,prisma VENT50-C,,,yes
+Lowenstein Medical,VENTIlogic LS,,,yes
+Lowenstein Medical,VENTIlogic plus,,,yes
+Medtronic,Puritan Bennett 980,,,yes
+Medtronic,Puritan Bennett 840,,,yes
+Medtronic,Puritan Bennett 560,2-10,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7503115/,
+Medtronic,Newport e360,3-25,https://asiapac.medtronic.com/content/dam/covidien/library/us/en/product/acute-care-ventilation/e360_Operaters_Manual_en_PT00095731B00.pdf,
+Medtronic,Newport HT70 Plus,3-30,https://www.tri-anim.com/data/default/productattachments/THS-Covidien-HT70Plus-Portable-Ventilator.pdf,
+Micomme,ST-30K,*,"flow rate 170L/min : leakage bias ±22
+flow rate 10L/min : flow bias ±6
+flow rate 70L/min : flow bias : ±12.      (email from rep)",yes
+Micomme,ST-30H,*,"flow rate 30L/min : leakage bias ±8
+flow rate 170L/min : leakage bias ±22.    (email from rep)",yes
+Micomme,OH-70C,*,"flow rate 2~4L/min : ±2
+flow rate 4~25L/min : ±4
+flow rate 25~70L/min : ±7    (email from rep)",yes
+Mindray,SV300,,,yes
+Mindray,SV600,,,yes
+Mindray,SV800,,,yes
+Mindray,SynoVent E3,,,yes
+Mindray,SynoVent E5,,,yes
+Nihon Kohden,NKV-550,,,yes
+Philips,E30,,,yes
+Philips,Trilogy Evo,,,yes
+Philips,EV300,,,yes
+Philips,V60,,,yes
+Philips,V60 Plus,,,yes
+Philips,V680,,,yes
+Philips,Trilogy 100,,,yes
+Philips,Trilogy 200,,,yes
+ResMed,Astral 100,changes w/ set triggering sensitivity,,yes
+ResMed,Astral 150,changes w/ set triggering sensitivity,,yes
+ResMed,Stellar 150,,,yes
+Smiths Medical,paraPAC plus,,,yes
+Smiths Medical,Pneupac VR1,,,yes
+Stephan,EVE TR,,,yes
+Stephan,EVE IN,,,yes
+Thornhill Medical,MOVES SLC,0,,yes
+Ventec Life Systems ,VOCSN,5,,yes
+Vyaire,ReVel,,,yes
+Vyaire,LTV2 2150,0-15,operator manual in  https://www.vyaire.com/products/ltv2tm-series-ventilators,
+Vyaire,LTV2 2200,0-15,operator manual in.  https://www.vyaire.com/products/ltv2tm-series-ventilators,
+Vyaire,LTV 1150,10,operator manual in   https://www.vyaire.com/products/ltvtm-series-ventilators,
+Vyaire,LTV 1200,10,operator manual in   https://www.vyaire.com/products/ltvtm-series-ventilators,
+Vyaire,bellavista 1000e,,,yes
+Vyaire,VELA,10-20,operator manual in.  https://www.vyaire.com/products/vela-ventilator,
+Vyaire,3100A,,,yes
+Vyaire,3100B,,,yes
+Vyaire,AVEA ,2,operator manual in.  https://www.vyaire.com/products/avea-cvs-ventilation-system,
+Vyaire,bellavista 1000,,,yes
+Weinmann Emergency,MEDUMAT standard,0,,yes
+Weinmann Emergency,MEDUMAT transport,0,,yes
+Weinmann Emergency,MEDUVENT standard,0,,yes
+Zoll,Z Vent,0,,yes
+Zoll,EMV+,0,,yes
