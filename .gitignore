@@ -1,5 +1,6 @@
 .DS_Store
 node_modules
+wireframes
 /dist
 
 # local env files
