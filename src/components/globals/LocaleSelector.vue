@@ -1,6 +1,6 @@
 <template>
-  <v-btn-toggle :items="locales" v-model="locale" label="Language" mandatory group dense>
-    <v-btn v-for="locale in locales" :key="locale.abbreviation" text small class="text-capitalize" :value="locale.abbreviation">{{ locale.language }}
+  <v-btn-toggle id="locale-selector" :items="locales" v-model="locale" label="Language" mandatory group dense>
+    <v-btn v-for="locale in locales" :key="locale.abbreviation" text plain small class="text-capitalize ma-0" :value="locale.abbreviation">{{ locale.language }}
     </v-btn>
   </v-btn-toggle>
 </template>
@@ -51,5 +51,15 @@
 </script>
 
 <style>
+#locale-selector .v-btn--active::before {
+  opacity: 0;
+}
 
+#locale-selector .v-btn--active {
+  font-weight: 700;
+}
+
+#locale-selector button + button {
+  border-left: solid 1px var(--v-primary-base);
+}
 </style>
