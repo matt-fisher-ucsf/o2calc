@@ -31,7 +31,7 @@
             /></figure></v-col>
              <v-col cols="4"><figure class="text-center">
                         <img
-              style="height: 24px;"
+              style="height: 44px;"
               alt="logo for Lifebox"
               src="@/assets/lifebox-logo.png"
             /></figure></v-col>
@@ -43,7 +43,7 @@
             /></figure></v-col>
              <v-col cols="4"><figure class="text-center">
                         <img
-              style="height: 24px;"
+              style="height: 40px;"
               alt="logo for AriadneLabs"
               src="@/assets/ariadne-logo.png"
             /></figure></v-col>
