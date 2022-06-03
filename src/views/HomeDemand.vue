@@ -303,9 +303,6 @@ export default {
 
       'patient_table_history',
     ]),
-    postUrl() {
-      return 'https://clstest3.ucsf.edu/nexus/api/o2/o2-server.php?country=' + this.country.toLowerCase() + '&facility=' + this.facility + '&facility=' + this.facility2 + '&pin=' + this.pin + '&id=2bedc362-89a5-4879-87c1-875fd46e051f'
-    },
     formattedCsv(arr){
       var str = '';
       arr.forEach(rw => {
@@ -404,8 +401,7 @@ export default {
       const requestOptions = {
           method: 'POST'
         }
-    const postUrl ='https://clstest3.ucsf.edu/nexus/api/o2/o2-server.php?country=' + this.country.toLowerCase() + '&facility=' + this.facility + '&id=2bedc362-89a5-4879-87c1-875fd46e051f&payload=' + postBody
-    
+    const postUrl ='https://clstest3.ucsf.edu/nexus/api/o2/o2-server.php?country=' + this.country.toLowerCase() + '&facility=' + this.facility + '&facility2=' + this.facility2 + '&pin=' + this.pin + '&id=2bedc362-89a5-4879-87c1-875fd46e051f&payload=' + postBody
       fetch(postUrl, requestOptions)
       .then(async response => {
           const data = await response.json()
