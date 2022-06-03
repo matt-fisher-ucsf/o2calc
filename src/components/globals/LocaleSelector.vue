@@ -3,18 +3,6 @@
     <v-btn v-for="locale in locales" :key="locale.abbreviation" text small class="text-capitalize" :value="locale.abbreviation">{{ locale.language }}
     </v-btn>
   </v-btn-toggle>
-
-      <!-- <v-select
-      :items="locales"
-      item-text = "language"
-      item-value = "abbreviation"
-      v-model="locale"
-      label="Language"
-      dense
-      hide-details="true"
-      class="align-self-center"
-      style="margin-left:10px; flex-grow: 0;"
-    ></v-select> -->
 </template>
 
 <script>

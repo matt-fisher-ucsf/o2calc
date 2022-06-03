@@ -1,7 +1,7 @@
 <template>
   <v-footer class="primary dark d-print-none" style="">
     
-       <v-container fluid :style="calculator==='supply' ? 'margin-bottom:8rem;margin-top:4rem;' : 'margin-bottom:0px;margin-top:2rem;'" class="white--text disclaimer">
+       <v-container :style="calculator==='supply' ? 'margin-bottom:8rem;margin-top:4rem;' : 'margin-bottom:0px;margin-top:2rem;'" class="white--text disclaimer">
         <v-row justify="center">
           <v-col cols="7" style = "">
             <section class="footer-links">

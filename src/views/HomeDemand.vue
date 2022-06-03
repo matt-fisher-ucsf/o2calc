@@ -135,7 +135,52 @@
         </v-card>
       </v-col>
     </v-row>
-
+<v-row id="demand-table-upload-fields" v-if="showUploadFields && demandmode">
+  <v-col
+    cols="12"
+    sm="6"
+    md="3"
+  >
+    <v-select
+      :items="countries"
+      label="Country"
+      v-model="country"
+    ></v-select>
+  </v-col>
+  <v-col
+    cols="12"
+    sm="6"
+    md="2"
+  >
+    <v-text-field
+      label="Facility ID"
+      v-model="facility"
+    ></v-text-field></v-col>
+    
+    <v-col    cols="12"
+    sm="6"
+    md="2"><v-text-field
+      label="Facility ID (again)"
+      v-model="facility2"
+    ></v-text-field></v-col>
+      <v-col
+    cols="12"
+    sm="6"
+    md="2"
+  >
+    <v-text-field
+      label="PIN"
+      v-model="pin"
+    ></v-text-field></v-col>
+  <v-col
+    cols="12"
+    sm="6"
+    md="3"
+  >
+  <v-btn tile x-large outlined @click="upload">
+  {{ $t("Upload") }}
+</v-btn></v-col>
+</v-row>
     <v-row class="justify-center d-print-none">
       <v-btn tile x-large outlined @click="print">
         <icon-print />
@@ -144,6 +189,10 @@
       <v-btn tile x-large outlined @click="download">
         <icon-save />
         {{ $t("Save") }}
+      </v-btn>
+      <v-btn v-if="demandmode" tile x-large outlined @click="showUploadFields = !showUploadFields">
+        <icon-upload />
+        {{ $t("Save to cloud") }}
       </v-btn>
     </v-row>
 
@@ -170,6 +219,7 @@ import DaysDemand from '@/components/DaysDemand.vue'
 
 import IconPrint from '@/components/IconPrint.vue'
 import IconSave from '@/components/IconSave.vue'
+import IconUpload from '@/components/IconUpload.vue'
 
 const download_csv = function(arr) {
   var str = '';
@@ -206,6 +256,7 @@ export default {
     DaysDemand,
     IconPrint,
     IconSave,
+    IconUpload
   },
 
   data: () => ({
@@ -214,6 +265,12 @@ export default {
     supply_type_plant: null,
     supply_type_liquid: null,
     supply_type_concentrator: null,
+    showUploadFields: false,
+    countries: ['Ecuador', 'Vietnam', 'US'],
+    country: '',
+    facility: '',
+    facility2: '',
+    pin: ''
   }),
 
   computed: {
@@ -246,6 +303,19 @@ export default {
 
       'patient_table_history',
     ]),
+    postUrl() {
+      return 'https://clstest3.ucsf.edu/nexus/api/o2/o2-server.php?country=' + this.country.toLowerCase() + '&facility=' + this.facility + '&facility=' + this.facility2 + '&pin=' + this.pin + '&id=2bedc362-89a5-4879-87c1-875fd46e051f'
+    },
+    formattedCsv(arr){
+      var str = '';
+      arr.forEach(rw => {
+        let line = '';
+        line = rw.join(",");
+        str += line + '\r\n';
+      });
+    return str
+    }
+
   },
 
   watch: {
@@ -306,6 +376,43 @@ export default {
       })
       download_csv(export_dat)
     },
+    upload: function() {
+      let export_dat = [["date", "device", "rate", "leak", "bias", "fio2", "rr", "expiratory", "liters", "patients"].map(x => this.$t(x))]
+
+      Object.entries(this.patient_table_history).forEach( d => {
+        if(Array.isArray(d[1]) && d[1].length > 0) {
+          d[1].forEach(rw => {
+            let dt = d[0]
+            let row = [dt]
+            const fields = ["date", "device", "rate", "leak", "bias", "fio2", "rr", "expiratory", "liters", "patients"]
+            fields.forEach( (ky) => {
+              row.push(rw[ky])
+            })
+            export_dat.push(row)
+          })
+        }
+      })
+
+      var postBody = ''
+
+      export_dat.forEach(rw => {
+        let line = ''
+        line = rw.join(",")
+        postBody += line + '~~'
+      })
+
+      const requestOptions = {
+          method: 'POST'
+        }
+    const postUrl ='https://clstest3.ucsf.edu/nexus/api/o2/o2-server.php?country=' + this.country.toLowerCase() + '&facility=' + this.facility + '&id=2bedc362-89a5-4879-87c1-875fd46e051f&payload=' + postBody
+    
+      fetch(postUrl, requestOptions)
+      .then(async response => {
+          const data = await response.json()
+          console.log(data, this.postUrl, postBody)
+      })
+    }
+
   },
 
   mounted: function() {

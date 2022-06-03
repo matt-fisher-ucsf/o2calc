@@ -1,9 +1,11 @@
 <template>
 <v-app id="open-critical-care">
   <OccHeader />
-  <v-content>
-    <router-view />
-  </v-content>
+  <v-container>
+    <v-content>
+      <router-view />
+    </v-content>
+  </v-container>
   <OccFooter />
   </v-app>
 </template>
@@ -46,11 +48,13 @@ export default {
 
 <style lang="scss">
 #open-critical-care {
-  max-width: 1208px;
   margin: auto;
     font-family: Roboto, sans !important;
 }
 
+.container {
+  max-width: 1208px;
+}
 #open-critical-care .title {
     font-family: Roboto, sans !important;
 }

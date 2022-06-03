@@ -2,9 +2,8 @@
   <div>
     <div class="statistic">
       <v-card
-        class="red"
-        style="background-color: #ec1848 !important;"
-        dark
+        class="accent"
+        light
       >
         <v-card-title class="d-flex subtitle-1">{{ $t('Consumption per Day') }} ({{ $t('liters') }})</v-card-title>
         <svg width="100%" height="100%" :viewBox="calcViewbox(numberToString(usage) + ' L')">
@@ -15,9 +14,8 @@
 
     <div class="statistic">
       <v-card
-        class="red"
-        style="background-color: #ec1848 !important;"
-        dark
+        class="accent"
+        light
       >
         <v-card-title class="d-flex subtitle-1">{{ $t('Consumption per Day') }} ({{ $t('cubic meters') }})</v-card-title>
         <svg width="100%" height="100%" :viewBox="calcViewbox(numberToString(usage / 1000) + ' m³')">
@@ -28,9 +26,8 @@
 
     <div class="statistic">
       <v-card
-        class="red"
-        style="background-color: #ec1848 !important;"
-        dark
+        class="accent"
+        light
       >
         <v-card-title class="d-flex subtitle-1">{{ $t('Consumption per') }} {{numberToString(days_demand)}} {{days_demand > 1 ? $t('days') : $t('day')}} ({{ $t('liters') }})</v-card-title>
         <svg width="100%" height="100%" :viewBox="calcViewbox(numberToString(usage * days_demand) + ' L')">
@@ -41,9 +38,8 @@
 
     <div class="statistic">
       <v-card
-        class="red"
-        style="background-color: #ec1848 !important;"
-        dark
+        class="accent"
+        light
       >
         <v-card-title class="d-flex subtitle-1">{{ $t('Consumption per') }} {{numberToString(days_demand)}} {{days_demand > 1 ? $t('days') : $t('day')}} ({{ $t('cubic meters') }})</v-card-title>
         <svg width="100%" height="100%" :viewBox="calcViewbox(numberToString(usage * days_demand / 1000) + ' m³')">
@@ -94,7 +90,7 @@ export default {
     left: 0px;
   }
   .statistic >>> text {
-    fill: rgba(255, 255, 255, 0.7);
+    fill: rgba(0,0,0,1);
   }
 
   .subtitle-1 {
